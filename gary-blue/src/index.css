@@ -1,13 +1,90 @@
-/*
-.Navbar {
-  flex: auto;
+
+.Desktop_Navigation_Bar {
   background-color: darkorange;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 25px;
-  text-align: center;
-  
+  height: 80px;
 }
-*/
+.Desktop_Nav_Logo{
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  background-color: darkorange;
+  height: 100%;
+}
+.Desktop_Nav_Logo_Container{
+  padding-top: 20px;
+  padding-left: 40px;
+  font-weight: bold;
+}
+.Desktop_Nav_Buttons{
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+  height: 100%;
+  background-color: darkorange;
+}
+.Desktop_Nav_Button{
+  display: inline-block;
+  margin-right: 10px;
+  background-color: darkorange;
+  height: 100%;
+  width: 100px;
+  text-align: center;
+}
+.Desktop_Nav_Button_Label{
+  padding-top: 20px;
+}
+.Desktop_Nav_Button:hover {
+  background-color: orange;
+  text-decoration: underline;
+}
+
+.Mobile_Nav_Bar{
+  display: none;
+  background-color: darkorange;
+}
+.Mobile_Nav_Dropdown_Menu{
+  display: inline-block;
+}
+.Mobile_Nav_Bar_Header{
+  display: inline-block;
+  background-color: aqua;
+}
+.Mobile_Nav_Menu_Button{
+  background-color: darkorange;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+}
+.Mobile_Nav_Menu_Button_Hambuger_Bar{
+  width: 35px;
+  height: 4px;
+  background-color: black;
+  margin: 5px 0;
+}
+.Mobile_Nav_Menu_Content{
+  display: none;
+  position: absolute;
+  background-color: lightsalmon;
+  min-width: 160px;
+  z-index: 1;
+}
+.Mobile_Nav_Menu_Item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.Mobile_Nav_Menu_Item:hover {
+  background-color: orange;
+}
+
 .Greybox {
   flex: auto;
   position: fixed;
@@ -17,8 +94,7 @@
   color: white;
   width: 870px;
   height: 440px;
-  border-radius: 8px;
-  
+  border-radius: 8px;  
 }
 
 .Redbox {
@@ -62,8 +138,25 @@
 
 }
 
-@media screen and (max-width:700px) {
-  
+@media screen and (max-width:735px) {
+  .Mobile_Nav_Bar{
+    display: block;
+  }
+  .Desktop_Navigation_Bar{
+    display: none;
+  }
+
+  .Greybox {
+    flex: auto;
+    position: fixed;
+    top: 10rem;
+    left: 2rem;
+    background-color: gray;
+    color: white;
+    width: 400px;
+    height: 440px;
+    border-radius: 8px;  
+  }
 }
 
 @media screen and (max-width:500px) {
