@@ -1,3 +1,6 @@
+body{
+  background-color: gainsboro;
+}
 
 .Desktop_Navigation_Bar {
   background-color: darkorange;
@@ -83,6 +86,34 @@
 }
 .Mobile_Nav_Menu_Item:hover {
   background-color: orange;
+}
+
+#Order_Page_Content_Area{
+  margin-top: -19px;
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+#Order_Page_Order_Header{
+  background-color: red;
+}
+#Order_Page_Food_Header{
+  background-color: green;
+}
+#Order_Page_Drink_Header{
+  background-color: brown;
+}
+.Order_Page_Option_Container{
+
+}
+.Order_Page_Radio_Selection{
+
+}
+#Order_Page_Address{
+  display: none;
+}
+.Order_Page_Quantity{
+  display: none;
 }
 
 .Greybox {
