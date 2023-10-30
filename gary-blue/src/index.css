@@ -7,6 +7,9 @@ body{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 25px;
   height: 80px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .Desktop_Nav_Logo{
   display: inline-block;
@@ -46,17 +49,24 @@ body{
 .Mobile_Nav_Bar{
   display: none;
   background-color: darkorange;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .Mobile_Nav_Dropdown_Menu{
   display: inline-block;
 }
 .Mobile_Nav_Bar_Header{
   display: inline-block;
-  background-color: aqua;
+  position: relative;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-65%);
+  font-size: 20px;
 }
 .Mobile_Nav_Menu_Button{
   background-color: darkorange;
-  padding: 16px;
+  padding: 2px;
   font-size: 20px;
   font-weight: bolder;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -89,31 +99,101 @@ body{
 }
 
 #Order_Page_Content_Area{
-  margin-top: -19px;
   background-color: white;
   margin-left: 15%;
   margin-right: 15%;
+  font-size: 16px;
+  padding-bottom: 20px;
+  padding-top: 5px;
 }
 #Order_Page_Order_Header{
   background-color: red;
+  text-align: center;
 }
 #Order_Page_Food_Header{
   background-color: green;
+  text-align: center;
 }
 #Order_Page_Drink_Header{
   background-color: brown;
+  text-align: center;
+}
+.Order_Page_Details_Container{
+  text-align: center;
 }
 .Order_Page_Option_Container{
-
+  display: flex;
+  order: 3;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.Order_Page_Radio_Selection{
-
+.Order_Page_Menu_Item{
+  padding: 10px;
+  width: 120px;
 }
 #Order_Page_Address{
   display: none;
 }
 .Order_Page_Quantity{
   display: none;
+}
+.Order_Page_Quantity input{
+  width: 50px;
+}
+.Order_Page_Order_Overlay{
+  display: none;
+  margin: auto;
+  position: absolute;
+  top: 50px; 
+  left: 50px;
+  bottom: 50px; 
+  right: 50px;
+  background-color: brown;
+  border-radius: 30px;
+  z-index:5;
+}
+.Order_Page_Error_Box{
+  background-color: palevioletred;
+  border-style: solid;
+  border-color: red;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 300px;
+  display: none;
+  text-align: center;
+  margin: auto;
+}
+.Order_Page_Order_Overlay_Content{
+  position: absolute;
+  top: 50px; 
+  left: 50px; 
+  bottom: 50px; 
+  right: 50px; 
+  background-color: white;
+  overflow: auto;
+  padding:2px; 
+}
+.Overlay_Button_Container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Order_Page_Button{
+  background-color: orangered;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+.Order_Page_Button:hover{
+  background-color: coral;
+}
+#Order_Page_Complete{
+  text-align: center;
 }
 
 .Greybox {
@@ -165,10 +245,6 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width:400px) {
-
-}
-
 @media screen and (max-width:735px) {
   .Mobile_Nav_Bar{
     display: block;
@@ -191,14 +267,45 @@ body{
 }
 
 @media screen and (max-width:500px) {
-  
+  .Order_Page_Order_Overlay{
+    border-radius: 25px;
+  }
+  .Order_Page_Order_Overlay_Content{
+    top: 35px; 
+    left: 35px; 
+    bottom: 35px; 
+    right: 35px; 
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .Order_Page_Order_Overlay{
+    top: 50px; 
+    left: 50px;
+    bottom: 50px; 
+    right: 50px;
+    border-radius: 20px;
+  }
+  .Order_Page_Order_Overlay_Content{
+    top: 20px; 
+    left: 20px; 
+    bottom: 20px; 
+    right: 20px; 
+    overflow: auto;
+  }
+}
+@media screen and (max-width:325px) {
+  .Mobile_Nav_Bar_Header{
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width:1100px) {
   
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1250px) {
   
 }
 

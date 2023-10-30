@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Order from './pages/Order';
+import Complete from './pages/Complete';
 
 function App() {
   const [page, setPage] = useState("Home");
@@ -30,7 +31,15 @@ function App() {
     return (
       <>
         <Navbar func = {changePage}></Navbar>
-        <Order></Order>
+        <Order func = {changePage}></Order>
+      </>
+    );
+  }
+  else if(page === "Complete"){
+    return (
+      <>
+        <Navbar func = {changePage}></Navbar>
+        <Complete func = {changePage}></Complete>
       </>
     );
   }

@@ -42,7 +42,7 @@ function Navbar({func}) {
           </div>
         </div>
         <div className="Mobile_Nav_Bar_Header">
-          Gary Boo's Halloween Diner
+          <label>Gary Boo's Halloween Diner</label>
         </div>
       </div>
     </div>
