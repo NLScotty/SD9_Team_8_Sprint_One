@@ -19,7 +19,7 @@ function Order({func}) {
     }
   }
   function displayOrderReview(){
-    let menuItems=["pizza","steak","hotdog","hamburger","fries","pasta","water","pop","coffee","lemonade","iced_tea","milk"]
+    let menuItems=["pizza","steak","hotdog","hamburger","fries","toutons","water","pop","coffee","lemonade","iced_tea","milk"]
     let errorMessageBox = document.querySelector(".Order_Page_Error_Box")
     errorMessageBox.innerHTML = ""
     errorMessageBox.style.display= "none"
@@ -109,7 +109,7 @@ function Order({func}) {
             <label htmlFor="pickup">Delivery</label>
           </div>
           <div className='Order_Page_Text_Field' id='Order_Page_Address'>
-            <label>Address</label>
+            <label>Address: </label>
             <input id='address'></input>
           </div>
         </div>
@@ -156,11 +156,11 @@ function Order({func}) {
             </div>
           </div>
           <div className='Order_Page_Menu_Item'>
-            <input type="checkbox" id="pasta" name="pasta" value="Pasta" onChange={() => toggleMenuItem("pasta")}></input>
-            <label htmlFor="pasta">Pasta</label>
-            <div className='Order_Page_Quantity' id="qty_pasta_field">
-              <label htmlFor="qty_pasta">qty: </label>
-              <input type="number" id="qty_pasta" name="qty_pasta" min="1"></input>
+            <input type="checkbox" id="toutons" name="toutons" value="Toutons" onChange={() => toggleMenuItem("toutons")}></input>
+            <label htmlFor="toutons">Touton</label>
+            <div className='Order_Page_Quantity' id="qty_toutons_field">
+              <label htmlFor="qty_toutons">qty: </label>
+              <input type="number" id="qty_toutons" name="qty_toutons" min="1"></input>
             </div>
           </div>
         </div>  

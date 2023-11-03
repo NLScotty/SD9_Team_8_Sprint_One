@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Butcherman');
+/* generated using https://superdesigner.co/tools/css-backgrounds */
 body{
-  background-color: gainsboro;
+  background: linear-gradient(135deg, #52a26d 25%, transparent 25%), linear-gradient(45deg, #52a26d 25%, transparent 25%),linear-gradient(135deg, transparent 24%,#604064 25%, #604064 45%, transparent 45%), linear-gradient(45deg, transparent 24%,#604064 25%, #604064 45%, transparent 45%);
+        background-size: 4em 4em;
+        background-color: #52a26d;
+        opacity: 1
 }
+.Fancy_Font{
+  font-family: 'Butcherman', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Make_It_Big{
+  font-size: 3em;
+}
+
 
 .Desktop_Navigation_Bar {
   background-color: darkorange;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 25px;
   height: 80px;
   margin-top: -10px;
@@ -196,53 +208,75 @@ body{
   text-align: center;
 }
 
-.Greybox {
-  flex: auto;
-  position: fixed;
-  top: 10rem;
-  left: 18rem;
-  background-color: gray;
-  color: white;
-  width: 870px;
-  height: 440px;
-  border-radius: 8px;  
+.Menu_Page_Menu_Item_Container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Menu_Page_Menu_Item{
+  width: 250px;
+  text-align: center;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.Menu_Page_Menu_Item_Overlay{
+  display: none;
+}
+.Menu_Page_Menu_Item_Image{
+  width: 100%;
+  height: 200px;
+}
+.Menu_Page_Header{
+  width: 800px;
+  padding: 20px;
+  text-align: center;
+  background: aliceblue;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+.Menu_Page_Menu_Header{
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background: aliceblue;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px
+}
+.Home_Page_Content_Area{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+  padding: 20px;
+  background-color: aliceblue;
+  text-align: center;
+  border-radius: 30px;
+}
+.Home_Page_Time_Table{
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.Redbox {
-  flex: auto;
-  background-color: red;
-  position: fixed;
-  width: 830px;
-  height: 38px;
-  top: 14rem;
-  left: 19.6rem;
-  right: 2rem;
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+@media screen and (min-width:1000px) {
+  .Menu_Page_Menu_Item_Container{
+    width: 1000px;
+    margin:auto
+  }
 }
 
-.Orangetext {
-  flex: auto;
-  color: orange;
-  position: fixed;
-  top: 20rem;
-  left: 35rem;
-  font-size: 20px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.Hourstext {
-  flex: auto;
-  justify-content: flex-start;
-  color: orange;
-  position: fixed;
-  top: 23rem;
-  left: 21rem;
-  font-size: 20px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+@media screen and (max-width:850px) {
+  .Menu_Page_Header{
+    width: 420px;
+    font-size: 2.8em;
+  }
 }
 
 @media screen and (max-width:735px) {
@@ -252,17 +286,13 @@ body{
   .Desktop_Navigation_Bar{
     display: none;
   }
+}
 
-  .Greybox {
-    flex: auto;
-    position: fixed;
-    top: 10rem;
-    left: 2rem;
-    background-color: gray;
-    color: white;
-    width: 400px;
-    height: 440px;
-    border-radius: 8px;  
+@media screen and (max-width:600px) {
+  .Home_Page_Content_Area{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
   }
 }
 
@@ -276,6 +306,13 @@ body{
     bottom: 35px; 
     right: 35px; 
     overflow: auto;
+  }
+  .Order_Page_Error_Box{
+    width:180px
+  }
+  .Menu_Page_Header{
+    width: 300px;
+    font-size: 2.5em;
   }
 }
 

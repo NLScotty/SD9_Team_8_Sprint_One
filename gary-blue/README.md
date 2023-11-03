@@ -68,3 +68,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+All Images from Unsplash under the Unsplash License:
+
+Food Photos:
+
+Logan Weaver - Fries Photo
+The Food Photographer - Pizza Photo
+Elena Leya - Fried Dough Photo
+Loija Nguyen - Steak Photo
+Amirali Mirhashemian - Hamburger Photo
+Yuheng Chen - Hotdog Photo
+
+Drink Photos:
+
+Casper Rae - Pop Photo
+NIKHL - Water Photo
+Nathan Dumlao - Coffee Photo
+Gabi Miranda - Milk Photo
+Charity Beth Long - Lemonade Photo
+Food Photographer | Jennifer Pallian - Iced Tea Photo
+Peter Bond - Diner 1 Photo
+Hans Vivek - Diner 2 Photo

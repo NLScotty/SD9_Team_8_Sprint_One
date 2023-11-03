@@ -1,16 +1,24 @@
 function Home(){
 
   return(
-  <>
-    <h3 className="Blackbox">
-      <div className="Greybox"><span className="Redbox">Gary Boo's Halloween Diner, a wonderful place to eat!</span></div>
-        <p className="Orangetext">We are located on 123 Scary Road.</p> 
-          <p className="Hourstext">Our Hours of Operation:
-                                           Monday to Friday:5am-8pm |
-                                           Saturday and Sunday:Closed</p>
-          </h3>
+  <div className="Home_Page">
+    <div className="Home_Page_Content_Area">
+      <h2>Welcome to</h2>
+      <h1 className="Fancy_Font Make_It_Big">Gary Boo's Halloween Diner</h1>
+      <h2>Open From:</h2>
+      <div className="Home_Page_Time_Table">
+        <div className="Home_Page_Time_Item"> 
+          Monday to Friday:<br></br>
+          8:00 AM to 12:00 PM
+        </div>
+        <div className="Home_Page_Time_Item"> 
+          Saturday to Sunday:<br></br>
+          11:00 AM to 5:00 PM
+        </div>
+      </div>
+    </div>
       
-  </>
+  </div>
   );
 }
 
