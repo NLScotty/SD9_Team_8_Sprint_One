@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import fries from '../images/menu_items/fries.jpg'
 import touton from '../images/menu_items/fried_dough.jpg'
 import pizza from '../images/menu_items/pizza.jpg'
-import steak from '../images/menu_items/steak.jpg'
+import steak from '../images/menu_items/steak.jpeg'
 import hamburger from '../images/menu_items/hamburger.jpg'
 import hotdog from '../images/menu_items/hotdog.jpg'
 import water from '../images/menu_items/water.jpg'
@@ -28,45 +28,45 @@ function Menu() {
         <h2 className='Menu_Page_Menu_Header '>Food</h2>
         <div className='Menu_Page_Menu_Item_Container'>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("pizza")}>
-            <h3>Pizza</h3>
+            <h3>Pumpkin Pizza</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="pizza">
               <img className = 'Menu_Page_Menu_Item_Image' src={pizza}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>A hand made peperoni pizza with a mix of cheddar cheese and mozzarella atop fresh tomato sauce.</p>
             </div>
           </div>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("steak")}>
-            <h3>Steak</h3>
+            <h3>Spooky Steak</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="steak">
               <img className = 'Menu_Page_Menu_Item_Image' src={steak}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>High grade canadian steak cooked to order with a side of mashed potato and seasonal veg.</p>
             </div>
           </div>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("hamburger")}>
-            <h3>Hamburger</h3>
+            <h3>Ghost Burger</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="hamburger">
               <img className = 'Menu_Page_Menu_Item_Image' src={hamburger}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>Our signature hamburger with a seasonal spooky twist, flame grillled patty topped with lettuce, tomato, cheddar cheese, and ghost pepper sauce for the brave of heart! </p>
             </div>
           </div>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("hotdog")}>
-            <h3>Hotdog</h3>
+            <h3>Demon Dogs</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="hotdog">
               <img className = 'Menu_Page_Menu_Item_Image' src={hotdog}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>Our Haloween Hotdogs topped with katchup, mustard, bacon, and chipotle aoli.</p>
             </div>
           </div>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("fries")}>
-            <h3>Fries</h3>
+            <h3>Fright Fries</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="fries">
               <img className = 'Menu_Page_Menu_Item_Image' src={fries}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>Classic home fries made to share!</p>
             </div>
           </div>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("toutons")}>
-            <h3>Toutons</h3>
+            <h3>Toutureous Toutons</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="toutons">
               <img className = 'Menu_Page_Menu_Item_Image' src={touton}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>Sweet and savoury toutons douced in molasses with seasonal berries and a side of eggs.</p>
             </div>
           </div>
         </div>
@@ -76,42 +76,42 @@ function Menu() {
             <h3>Bottled Water</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="water">
             <img className = 'Menu_Page_Menu_Item_Image' src={water}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>Disani, Aquafina, or fiji </p>
             </div>
           </div>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("pop")}>
             <h3>Pop</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="pop">
             <img className = 'Menu_Page_Menu_Item_Image' src={pop}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>Coke, diet Coke, Nestea, Root beer, Fanta, and Sprite.</p>
             </div>
           </div>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("coffee")}>
             <h3>Coffee</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="coffee">
             <img className = 'Menu_Page_Menu_Item_Image' src={coffee}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>Signature house blend in light, medium, dark, or decaffe.</p>
             </div>
           </div>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("lemonade")}>
             <h3>Lemonade</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="lemonade">
             <img className = 'Menu_Page_Menu_Item_Image' src={lemonade}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>Minute made lemonade with optional fresh strawberries.</p>
             </div>
           </div>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("iced_tea")}>
             <h3>Iced Tea</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="iced_tea">
             <img className = 'Menu_Page_Menu_Item_Image' src={iced_tea}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>Bigelow earl grey iced tea or Numi organic blend iced tea.</p>
             </div>
           </div>
           <div className='Menu_Page_Menu_Item' onClick={()=>toggleDisplay("milk")}>
             <h3>Milk</h3>
             <div className='Menu_Page_Menu_Item_Overlay' id="milk">
             <img className = 'Menu_Page_Menu_Item_Image' src={milk}></img>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde esse cumque recusandae eligendi autem doloremque nostrum laboriosam assumenda hic eos ratione ipsum ullam, sint minus, fugit blanditiis voluptas. Veniam.</p>
+              <p>1%, 2%, or Whole.</p>
             </div>
           </div>
         </div>
