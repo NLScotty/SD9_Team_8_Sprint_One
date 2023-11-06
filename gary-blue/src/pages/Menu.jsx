@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 
+// image imports
 import fries from '../images/menu_items/fries.jpg'
 import touton from '../images/menu_items/fried_dough.jpg'
 import pizza from '../images/menu_items/pizza.jpg'
@@ -13,7 +14,9 @@ import iced_tea from '../images/menu_items/iced_tea.jpg'
 import milk from '../images/menu_items/milk.jpg'
 import coffee from '../images/menu_items/coffee.jpg'
 
+// function that renders the order "page"
 function Menu() {
+  // function that renders the overlay display for a menu item. It finds the correct DOM object by the passed in ID.
   function toggleDisplay(item){
     let selected = document.getElementById(item);
     if(selected.style.display === "block"){
@@ -22,6 +25,7 @@ function Menu() {
       selected.style.display = "block"
     }
   }
+  // function that renders the page
   return (
     <>
       <h1 className='Menu_Page_Header Make_It_Big Fancy_Font'>Gary Boo's Halloween Diner Menu</h1>

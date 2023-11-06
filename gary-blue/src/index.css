@@ -12,8 +12,7 @@ body{
 .Make_It_Big{
   font-size: 3em;
 }
-
-
+/* CSS used by the navigation bar when screen is large enought to be a desktop*/
 .Desktop_Navigation_Bar {
   background-color: darkorange;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -57,7 +56,7 @@ body{
   background-color: orange;
   text-decoration: underline;
 }
-
+/* CSS used by the navigation bar when screen is more compact. Designed with mobile devices in mind*/
 .Mobile_Nav_Bar{
   display: none;
   background-color: darkorange;
@@ -110,13 +109,16 @@ body{
   background-color: orange;
 }
 
+/* CSS used by the order page */
 #Order_Page_Content_Area{
-  background-color: white;
+  background-color: aliceblue;
   margin-left: 15%;
   margin-right: 15%;
   font-size: 16px;
   padding-bottom: 20px;
   padding-top: 5px;
+  border-radius: 30px;
+  margin-top: 30px;
 }
 #Order_Page_Order_Header{
   background-color: red;
@@ -159,9 +161,9 @@ body{
   margin: auto;
   position: absolute;
   top: 50px; 
-  left: 50px;
-  bottom: 50px; 
-  right: 50px;
+  left: 80px;
+  bottom: 100px; 
+  right: 80px;
   background-color: brown;
   border-radius: 30px;
   z-index:5;
@@ -208,6 +210,7 @@ body{
   text-align: center;
 }
 
+/* CSS used by the menu page */
 .Menu_Page_Menu_Item_Container{
   display: flex;
   flex-wrap: wrap;
@@ -251,6 +254,7 @@ body{
   margin-top: 20px;
   margin-bottom: 10px
 }
+/* CSS used by the home page*/
 .Home_Page_Content_Area{
   margin-left: 25%;
   margin-right: 25%;
@@ -264,11 +268,23 @@ body{
   display: flex;
   justify-content: space-evenly;
 }
-
+/* CSS used when screen is at different sizes. Designed to make the application to not break when compact or in desktop mode */
 @media screen and (min-width:1000px) {
   .Menu_Page_Menu_Item_Container{
     width: 1000px;
     margin:auto
+  }
+  .Order_Page_Order_Overlay{
+    display: none;
+    margin: auto;
+    position: absolute;
+    top: 50px; 
+    left: 20%;
+    bottom: 100px; 
+    right: 20%;
+    background-color: brown;
+    border-radius: 30px;
+    z-index:5;
   }
 }
 

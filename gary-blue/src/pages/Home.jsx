@@ -1,5 +1,5 @@
 function Home(){
-
+  // function that renders the home "page"
   return(
   <div className="Home_Page">
     <div className="Home_Page_Content_Area">

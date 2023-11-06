@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+// Function that renders the complete "page".
 function Complete() {
   return (
     <div id='Order_Page_Content_Area'>

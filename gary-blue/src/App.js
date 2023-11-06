@@ -1,10 +1,14 @@
+//import needed for hooks
 import { useState } from 'react';
+//imports for the "pages"
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Order from './pages/Order';
 import Complete from './pages/Complete';
-
+// function that runs our application. It changes pages based on the state of "page". It does so by using a hook. Whenever the 
+// "page" state changes, it will recall the function using the new value for "page". The state of "page" determines which 
+// jsx element/page will be rendered.
 function App() {
   const [page, setPage] = useState("Home");
   function changePage(newPage){

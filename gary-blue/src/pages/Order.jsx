@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-
+// The order "page" takes a function so it can change pages to the complete "page"
 function Order({func}) {
+  // Code that display's or hides the address box, depending on whether or not the Order_Page_Address element is checked
   function toggleAddress(value){
     let addressField = document.getElementById("Order_Page_Address")
     if(value==="delivery"){
@@ -9,6 +10,7 @@ function Order({func}) {
       addressField.style.display="none"
     }
   }
+  // Code that Toggles the quantity box depending on the checked value of the element ID that is passed in.
   function toggleMenuItem(value){
     let selectedItem = document.getElementById(value)
     let qty_fries_field = document.getElementById("qty_"+value+"_field")
@@ -18,6 +20,9 @@ function Order({func}) {
       qty_fries_field.style.display="none"
     }
   }
+  // Code that Display's the Order Review. It takes information from the form. If all information is filled, will append it to
+  // a hidden element, then it will reveal the hidden element to show they overlay. If information is missing, it will instead
+  // show the error box with an appropiate error message
   function displayOrderReview(){
     let menuItems=["pizza","steak","hotdog","hamburger","fries","toutons","water","pop","coffee","lemonade","iced_tea","milk"]
     let errorMessageBox = document.querySelector(".Order_Page_Error_Box")
@@ -82,12 +87,15 @@ function Order({func}) {
     document.querySelector(".Order_Page_Order_Overlay_Order_Details").innerHTML=result
     document.querySelector(".Order_Page_Order_Overlay").style.display="block"
   }
+  // Function used to hide the above overlay
   function cancelOrder(){
     document.querySelector(".Order_Page_Order_Overlay").style.display="none"
   }
+  // function that calles the passed in function of Order, which we use to "change page"
   function confirmOrder(){
     func("Complete")
   }
+  // function that renders the document
   return (
     <div id='Order_Page_Content_Area'>
       <form onSubmit={e => e.preventDefault()}>
